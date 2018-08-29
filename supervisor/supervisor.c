@@ -23,17 +23,7 @@
 
 /*** Definition ***/
 
-typedef struct{
-    uint8_t         m_aucRptIPAddr[4];
-    
-    rptID_t         m_xRptID;
-    
-    uIPTcpCtrl_t *m_pxUIPTCPAppData;
-    TCPConnCfg_t    *m_pxTCPConnCfg;
-    
-    uint8_t         m_xRptFlag;
-    uint8_t         m_xRptState;
-}spvRpt_t;
+
 
 const TCPConnCbk_t m_xTCPConnCbk_Spv = {
     xSPV_TCPCbk_EstbConn,
